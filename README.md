@@ -1,4 +1,4 @@
-# Bem vindo ao meu portfólio Pessoal
+# Bem vindo ao meu Portfólio Pessoal
 
 ## Tecnologias usadas
 
