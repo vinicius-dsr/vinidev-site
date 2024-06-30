@@ -1,4 +1,7 @@
 import Hero from "@/app/_sections/Hero";
+import About from "./_sections/About";
+import Services from "./_sections/Services";
+import Projects from "./_sections/Projects";
 
 export default function Home() {
   return (
@@ -10,10 +13,19 @@ export default function Home() {
       </main>
 
       {/* About section */}
+      <section className="container mx-auto max-w-screen-xl py-20">
+        <About />
+      </section>
 
       {/* Service section */}
+      <section className="container mx-auto max-w-screen-xl py-20">
+        <Services />
+      </section>
 
-      {/* Project ection */}
+      {/* Project section */}
+      <section className="container mx-auto max-w-screen-xl py-20">
+        <Projects />
+      </section>
     </>
   );
 }

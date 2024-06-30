@@ -13,7 +13,7 @@ export default function Header() {
     <header className="border-b/50 sticky top-0 z-10 w-full bg-background/30 py-6 backdrop-blur-lg">
       <div className="container flex max-w-screen-xl items-center justify-between">
         <div className="flex items-center gap-8">
-          <Link href="" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="rounded-md bg-gradient-to-br from-primary/90 via-primary/70 to-primary/40 p-1">
               <Layers size={22} className="text-bold text-background" />
             </div>

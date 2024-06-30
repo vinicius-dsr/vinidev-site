@@ -5,6 +5,7 @@ import { cn } from "@/app/_lib/utils";
 import Header from "@/app/_components/Header";
 import { ThemeProvider } from "@/app/_components/ThemeProvider";
 import { siteConfig } from "@/app/_config/site";
+import Footer from "./_components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,7 +33,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen scroll-smooth bg-background font-sans antialiased",
           montserrat.variable,
         )}
       >
@@ -44,6 +45,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
