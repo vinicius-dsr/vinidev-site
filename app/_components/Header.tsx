@@ -1,9 +1,9 @@
 import { jetBrains } from "@/app/layout";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/_lib/utils";
 import { Layers } from "lucide-react";
 import Link from "next/link";
 import Nav from "./Nav";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/app/_config/site";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { buttonVariants } from "./ui/button";
 import ModeToggle from "./ModeToggle";

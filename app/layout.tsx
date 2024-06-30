@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import Header from "@/components/Header";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { siteConfig } from "@/config/site";
+import { cn } from "@/app/_lib/utils";
+import Header from "@/app/_components/Header";
+import { ThemeProvider } from "@/app/_components/ThemeProvider";
+import { siteConfig } from "@/app/_config/site";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

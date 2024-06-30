@@ -1,5 +1,5 @@
-import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-import { cn } from "@/lib/utils";
+import AnimatedShinyText from "@/app/_components/magicui/animated-shiny-text";
+import { cn } from "@/app/_lib/utils";
 import { ArrowRightIcon } from "lucide-react";
 
 export async function BadgeText() {
