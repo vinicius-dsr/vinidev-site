@@ -2,6 +2,7 @@ import Hero from "@/app/_sections/Hero";
 import About from "./_sections/About";
 import Services from "./_sections/Services";
 import Projects from "./_sections/Projects";
+import ContactCard from "./_components/ContactCard";
 
 export default function Home() {
   return (
@@ -31,6 +32,11 @@ export default function Home() {
         className="container mx-auto max-w-screen-xl py-20"
       >
         <Projects />
+      </section>
+
+      {/* Contact card */}
+      <section className="container mx-auto max-w-screen-xl py-20">
+        <ContactCard />
       </section>
     </>
   );

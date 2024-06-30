@@ -13,6 +13,10 @@ const nav = [
     name: "Projetos",
     href: "#projects",
   },
+  {
+    name: "Contato",
+    href: "/contact",
+  },
 ];
 export default function Nav() {
   return (
