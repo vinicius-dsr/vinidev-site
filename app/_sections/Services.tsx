@@ -40,17 +40,19 @@ export default function Services() {
   return (
     <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
       <div className="flex flex-col gap-5">
-        <h3 className="text-lg font-medium uppercase text-muted-foreground">
+        <h3 className="text-base font-medium uppercase text-muted-foreground md:text-lg">
           {services.title}
         </h3>
-        <h1 className="text-5xl font-medium">{services.subtitle}</h1>
+        <h1 className="mb-5 text-3xl font-medium md:mb-0 md:text-5xl">
+          {services.subtitle}
+        </h1>
       </div>
       <div className="flex flex-col gap-4">
         {services.acordionServices.map((service, index) => {
           return (
             <Accordion key={index} type="single" collapsible className="w-full">
               <AccordionItem value={service.title} className="">
-                <AccordionTrigger className="text-xl font-semibold">
+                <AccordionTrigger className="text-lg font-semibold md:text-xl">
                   {service.title}
                 </AccordionTrigger>
                 <AccordionContent className="text-base font-medium text-muted-foreground">

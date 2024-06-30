@@ -34,10 +34,12 @@ const projects = {
 export default function Projects() {
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="text-lg font-medium uppercase text-muted-foreground">
+      <h3 className="text-base font-medium uppercase text-muted-foreground md:text-lg">
         {projects.title}
       </h3>
-      <h1 className="text-4xl font-medium">{projects.subtitle}</h1>
+      <h1 className="text-3xl font-medium md:mb-0 md:text-5xl">
+        {projects.subtitle}
+      </h1>
       <div className="grid grid-cols-1 gap-7 py-5 md:grid-cols-2">
         {projects.projectList.map((project, index) => {
           return (

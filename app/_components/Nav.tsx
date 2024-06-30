@@ -20,7 +20,7 @@ const nav = [
 ];
 export default function Nav() {
   return (
-    <nav className="flex items-center gap-4">
+    <nav className="hidden items-center gap-4 md:flex">
       {nav.map((link, index) => {
         return (
           <Link

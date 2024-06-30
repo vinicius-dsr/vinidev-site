@@ -8,24 +8,24 @@ import { siteConfig } from "@/app/_config/site";
 
 export default function Hero() {
   return (
-    <div className="container relative mx-auto max-w-screen-lg py-24">
+    <div className="container relative mx-auto max-w-screen-lg py-14 md:py-24">
       <div className="flex flex-col gap-6 text-center">
         <BadgeText />
-        <h2 className="text-7xl font-medium">
+        <h2 className="text-3xl font-medium md:text-7xl">
           Freelancer, Designer & Desenvolvedor
         </h2>
-        <p className="mx-auto max-w-3xl text-lg font-medium text-muted-foreground">
+        <p className="mx-auto text-base font-medium text-muted-foreground md:max-w-3xl md:text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea,
           inventore minima adipisci ducimus tenetur autem similique voluptatum
           qui ad doloremque minus aut, itaque dolor earum provident, quae
           nesciunt maxime quas?
         </p>
-        <div className="mx-auto mt-5 flex items-center gap-4 text-center">
+        <div className="mx-auto mt-5 flex flex-col items-center gap-4 text-center md:flex-row">
           <Link
             href="/contact"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "group flex w-fit items-center gap-2 rounded-full py-7 text-base",
+              "group flex w-full items-center gap-2 rounded-full py-7 text-base md:w-fit",
             )}
           >
             Solicitar orçamento
@@ -38,7 +38,7 @@ export default function Hero() {
             href={siteConfig.links.whatsapp}
             className={cn(
               buttonVariants({ size: "lg", variant: "outline" }),
-              "flex w-fit items-center gap-2 rounded-full py-7 text-base",
+              "flex w-full items-center gap-2 rounded-full py-7 text-base md:w-fit",
             )}
           >
             Fale diretamente comigo
