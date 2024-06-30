@@ -31,18 +31,21 @@ export default function Header() {
         <div className="flex items-center">
           <Link
             href={siteConfig.links.github}
+            target="_blank"
             className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
           >
             <FaGithub size={20} />
           </Link>
           <Link
             href={siteConfig.links.instagram}
+            target="_blank"
             className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
           >
             <FaInstagram size={20} />
           </Link>
           <Link
             href={siteConfig.links.linkedin}
+            target="_blank"
             className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
           >
             <FaLinkedin size={20} />

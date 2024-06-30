@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <div className="mx-auto mt-5 flex items-center gap-4 text-center">
           <Link
-            href="#"
+            href="/contact"
             className={cn(
               buttonVariants({ size: "lg" }),
               "group flex w-fit items-center gap-2 rounded-full py-7 text-base",
