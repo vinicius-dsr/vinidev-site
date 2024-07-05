@@ -12,7 +12,7 @@ import MobileNav from "./MobileNav";
 export default function Header() {
   return (
     <header className="border-b/50 sticky top-0 z-10 w-full bg-background/30 py-4 backdrop-blur-lg md:py-6">
-      <div className="container flex max-w-screen-xl items-center justify-between">
+      <div className="container mx-auto flex max-w-screen-xl items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-3">
             <div className="rounded-md bg-gradient-to-br from-primary/90 via-primary/70 to-primary/40 p-1">

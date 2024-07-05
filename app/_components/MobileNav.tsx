@@ -51,7 +51,7 @@ export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="inline-flex md:hidden">
+        <Button variant="ghost" className="inline-flex pr-0 md:hidden">
           <AlignRightIcon />
         </Button>
       </SheetTrigger>
