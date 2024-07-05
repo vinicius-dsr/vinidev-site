@@ -6,6 +6,7 @@ import Header from "@/app/_components/Header";
 import { ThemeProvider } from "@/app/_components/ThemeProvider";
 import { siteConfig } from "@/app/_config/site";
 import Footer from "./_components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,6 +23,24 @@ export const jetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  keywords: [
+    "Freelancer",
+    "Desenvolvedor Front-end",
+    "Web Designer",
+    "Programador",
+    "Designer",
+    "E-commerce",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -45,6 +64,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
