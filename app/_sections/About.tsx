@@ -57,7 +57,7 @@ const about = {
   title: "Sobre mim",
   subtitle: "Desenvolvedor Front-end e apaixonado por tecnologia",
   description:
-    "Com vasto conhecimento em desenvolvimento e UI/UX designer, tenho me dedicado em desenvovimento web em geral, como Landing Pages, E-commerces, Blogs, Dashboard etc. Atualmente minha especialidade é desenvolvimento front-end. Resido em Paragominas/PA, onde atuo com freelancer.",
+    "Com vasto conhecimento em desenvolvimento e UI/UX design, tenho me dedicado em desenvovimento web em geral, como Landing Pages, E-commerces, Blogs, Dashboard etc. Atualmente minha especialidade é desenvolvimento Front-end. Resido em Paragominas/PA, onde atuo como freelancer.",
 };
 
 const skills = {
