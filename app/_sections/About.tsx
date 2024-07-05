@@ -10,6 +10,7 @@ import {
   FaJs,
   FaLinkedin,
   FaPhp,
+  FaPython,
   FaReact,
   FaWordpress,
 } from "react-icons/fa";
@@ -57,13 +58,12 @@ const about = {
   title: "Sobre mim",
   subtitle: "Desenvolvedor Front-end e apaixonado por tecnologia",
   description:
-    "Com vasto conhecimento em desenvolvimento e UI/UX design, tenho me dedicado em desenvovimento web em geral, como Landing Pages, E-commerces, Blogs, Dashboard etc. Atualmente minha especialidade é desenvolvimento Front-end. Resido em Paragominas/PA, onde atuo como freelancer.",
+    "Com vasto conhecimento em desenvolvimento e UI/UX designer, tenho me dedicado em desenvovimento web em geral, como Landing Pages, E-commerces, Blogs, Dashboard etc. Atualmente minha especialidade é desenvolvimento Front-end. Resido em Paragominas/PA, onde atuo como freelancer.",
 };
 
 const skills = {
   title: "Minhas Habilidades",
   subtitle: "Especializado nas principais tecnologias disponíveis no mercado.",
-  description: "Conheça algumas das tecnologias nas quais domino.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -100,6 +100,10 @@ const skills = {
     {
       icon: <FaPhp />,
       name: "PHP",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
     },
     {
       icon: <FaWordpress />,
