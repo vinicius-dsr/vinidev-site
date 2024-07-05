@@ -47,8 +47,8 @@ export default function Projects() {
               <Image
                 alt={project.name}
                 src={project.imageURL}
-                width={300}
-                height={300}
+                width={500}
+                height={500}
                 quality={100}
                 className="mt-5 h-auto w-full bg-contain"
               />
