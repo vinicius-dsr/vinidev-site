@@ -21,7 +21,10 @@ export const jetBrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: "Vinícius Reis - Front-end Developer",
+    template: `%s | Vinícius Reis`,
+  },
   description: siteConfig.description,
   keywords: [
     "Freelancer",
