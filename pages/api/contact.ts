@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
 const login = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
@@ -25,6 +25,8 @@ export default async function handler(
       orcamento,
       sobre,
     } = req.body;
+
+    const nodemailer = require("nodemailer");
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
