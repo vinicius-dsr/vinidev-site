@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/app/_components/ThemeProvider";
 import { siteConfig } from "@/app/_config/site";
 import Footer from "./_components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Analytics />
+          <SpeedInsights />
           <Footer />
         </ThemeProvider>
       </body>

@@ -203,7 +203,7 @@ export default function ProjectForm() {
           onChange={(e) => setPrazo(e.target.value)}
           type="text"
           id="prazo"
-          placeholder="20 dias, 45 dias, indetermiado, urgente.."
+          placeholder="20 dias, 45 dias, prazon indeterminado, urgente.."
           className="mb-5 bg-accent py-7"
         />
 
