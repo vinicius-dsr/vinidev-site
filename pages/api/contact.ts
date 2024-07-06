@@ -3,7 +3,10 @@ import type { NextApiRequest, NextApiResponse } from "next";
 const login = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   console.log("Data: ", req.body);
   const {
     name,
