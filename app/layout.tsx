@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     default: "Vinícius Reis - Front-end Developer",
     template: `%s | Vinícius Reis`,
   },
-  description: siteConfig.description,
+  description:
+    "Vinícius Reis | Desenvolver front-end focando em desenvolvimento de websites e landig pages. Projeto sempre tendo em vista a melhor experiência do usuário, alinhada com um bom visual e o propósito/objetivo do projeto.",
   keywords: [
     "Freelancer",
     "Desenvolvedor Front-end",
@@ -34,7 +35,18 @@ export const metadata: Metadata = {
     "Programador",
     "Designer",
     "E-commerce",
+    "Paragominas",
+    "UI",
+    "UX",
+    "UI/UX",
+    "Vinícius Reis",
+    "vinidev",
   ],
+  openGraph: {
+    images: [
+      "https://utfs.io/f/8881e2d3-b513-46a0-ad82-d6cfa54fdf46-ljwlqx.jpg",
+    ],
+  },
   robots: {
     index: true,
     follow: true,

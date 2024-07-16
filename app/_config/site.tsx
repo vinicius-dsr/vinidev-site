@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Vinícius Reis - Front-end Developer",
-  url: "",
+  url: "https://vinidev.tech",
   description:
-    "Freelancer, Designer e Desenvolvedor Front-end. Especializado nas principais tecnologias do mercado. Estou em contante crescimento e em buscar de novos desafios.",
+    "Vinícius Reis | Desenvolver front-end focando em desenvolvimento de websites e landig pages. Projeto sempre tendo em vista a melhor experiência do usuário, alinhada com um bom visual e o propósito/objetivo do projeto.",
   author: "Vinícius Reis",
   links: {
     instagram: "https://www.instagram.com/vinicius_dev",
