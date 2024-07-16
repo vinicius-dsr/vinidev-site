@@ -77,6 +77,7 @@ export default function MobileNav() {
                   href={link.href}
                   className={buttonVariants({ variant: "ghost" })}
                 >
+                  <span className="sr-only">{link.name}</span>
                   {link.icon}
                 </Link>
               );

@@ -130,11 +130,10 @@ export default function About() {
       <div className="flex flex-col items-center gap-2 rounded-md border px-5 py-7 md:w-[40%]">
         <Image
           src="/perfil-white.png"
-          alt=""
+          alt="Vinícius Reis | Desenvolver Front-end"
           width={100}
           height={100}
           quality={100}
-          className=""
         />
         <h3 className="mt-2 text-lg">Vinícius Reis</h3>
         <p className="text-muted-foreground">Desenvolver Front-end</p>

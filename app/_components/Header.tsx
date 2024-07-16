@@ -38,6 +38,7 @@ export default function Header() {
               "hidden md:inline-flex",
             )}
           >
+            <span className="sr-only">Github</span>
             <FaGithub size={20} />
           </Link>
           <Link
@@ -48,6 +49,7 @@ export default function Header() {
               "hidden md:inline-flex",
             )}
           >
+            <span className="sr-only">Instagram</span>
             <FaInstagram size={20} />
           </Link>
           <Link
@@ -58,6 +60,7 @@ export default function Header() {
               "hidden md:inline-flex",
             )}
           >
+            <span className="sr-only">Linkedin</span>
             <FaLinkedin size={20} />
           </Link>
           <ModeToggle />

@@ -61,6 +61,7 @@ export default function ContactCard() {
                 href={link.href}
                 className={cn(buttonVariants({ variant: "outline" }))}
               >
+                <span className="sr-only">{link.name}</span>
                 {link.icon}
               </Link>
             );

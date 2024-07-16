@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SquareArrowOutUpRight } from "lucide-react";
 
 const nav = [
   {
