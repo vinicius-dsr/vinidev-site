@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Montserrat, Poppins } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/app/_lib/utils";
 import Header from "@/app/_components/Header";
 import { ThemeProvider } from "@/app/_components/ThemeProvider";
-import { siteConfig } from "@/app/_config/site";
-import Footer from "./_components/Footer";
+import { cn } from "@/app/_lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { JetBrains_Mono, Montserrat } from "next/font/google";
+import Footer from "./_components/Footer";
+import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
