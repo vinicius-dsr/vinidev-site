@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     default: "Vinícius Reis - Front-end Developer",
     template: `%s | Vinícius Reis`,
   },
+  icons: {
+    icon: "favicon.icon",
+  },
   description:
     "Vinícius Reis | Desenvolver front-end focando em desenvolvimento de websites e landig pages. Projeto sempre tendo em vista a melhor experiência do usuário, alinhada com um bom visual e o propósito/objetivo do projeto.",
   keywords: [
