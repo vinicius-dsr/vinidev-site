@@ -1,3 +1,4 @@
+import Footer from "../_components/Footer";
 import ProjectForm from "../_components/ProjectForm";
 
 export default function page() {
@@ -19,6 +20,7 @@ export default function page() {
         </div>
         <ProjectForm />
       </div>
+      <Footer />
     </main>
   );
 }

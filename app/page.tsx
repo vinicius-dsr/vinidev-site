@@ -1,8 +1,9 @@
 import Hero from "@/app/_sections/Hero";
-import About from "./_sections/About";
-import Services from "./_sections/Services";
-import Projects from "./_sections/Projects";
 import ContactCard from "./_components/ContactCard";
+import Footer from "./_components/Footer";
+import About from "./_sections/About";
+import Projects from "./_sections/Projects";
+import Services from "./_sections/Services";
 
 export default function Home() {
   return (
@@ -38,6 +39,8 @@ export default function Home() {
       <section className="container mx-auto max-w-screen-xl py-20">
         <ContactCard />
       </section>
+
+      <Footer />
     </>
   );
 }
