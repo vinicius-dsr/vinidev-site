@@ -129,7 +129,7 @@ export default function About() {
     <div className="mx-auto flex flex-col gap-8 py-0 md:flex-row md:py-10">
       <div className="flex flex-col items-center gap-2 rounded-md border px-5 py-7 md:w-[40%]">
         <Image
-          src="/perfil-white.png"
+          src="/perfil-new.png"
           alt="Vinícius Reis | Desenvolver Front-end"
           width={100}
           height={100}
