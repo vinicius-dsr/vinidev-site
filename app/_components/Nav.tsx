@@ -3,15 +3,15 @@ import Link from "next/link";
 const nav = [
   {
     name: "Sobre",
-    href: "#about",
+    href: "/#about",
   },
   {
     name: "Serviços",
-    href: "#services",
+    href: "/#services",
   },
   {
     name: "Projetos",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     name: "Contato",
