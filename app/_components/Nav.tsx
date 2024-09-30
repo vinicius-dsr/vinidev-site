@@ -21,10 +21,10 @@ const nav = [
 export default function Nav() {
   return (
     <nav className="hidden items-center gap-4 md:flex">
-      {nav.map((link, index) => {
+      {nav.map((link) => {
         return (
           <Link
-            key={index}
+            key={link.name}
             href={link.href}
             className="text-sm font-medium text-muted-foreground transition-all hover:text-primary"
           >

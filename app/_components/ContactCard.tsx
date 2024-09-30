@@ -1,9 +1,9 @@
 import { ArrowRightIcon, ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
-import { cn } from "../_lib/utils";
-import { buttonVariants } from "./ui/button";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { siteConfig } from "../_config/site";
+import { cn } from "../_lib/utils";
+import { buttonVariants } from "./ui/button";
 
 const social = [
   {
@@ -54,10 +54,10 @@ export default function ContactCard() {
           <ArrowRightIcon size={18} className="hidden md:inline-flex" />
         </p>
         <div className="flex items-center gap-4">
-          {social.map((link, index) => {
+          {social.map((link) => {
             return (
               <Link
-                key={index}
+                key={link.name}
                 href={link.href}
                 className={cn(buttonVariants({ variant: "outline" }))}
               >

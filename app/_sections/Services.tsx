@@ -48,9 +48,14 @@ export default function Services() {
         </h1>
       </div>
       <div className="flex flex-col gap-4">
-        {services.acordionServices.map((service, index) => {
+        {services.acordionServices.map((service) => {
           return (
-            <Accordion key={index} type="single" collapsible className="w-full">
+            <Accordion
+              key={service.title}
+              type="single"
+              collapsible
+              className="w-full"
+            >
               <AccordionItem value={service.title} className="">
                 <AccordionTrigger className="text-lg font-semibold md:text-xl">
                   {service.title}

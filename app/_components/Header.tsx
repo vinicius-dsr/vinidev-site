@@ -1,13 +1,13 @@
-import { jetBrains } from "@/app/layout";
+import { siteConfig } from "@/app/_config/site";
 import { cn } from "@/app/_lib/utils";
+import { jetBrains } from "@/app/layout";
 import { Layers } from "lucide-react";
 import Link from "next/link";
-import Nav from "./Nav";
-import { siteConfig } from "@/app/_config/site";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { buttonVariants } from "./ui/button";
-import ModeToggle from "./ModeToggle";
 import MobileNav from "./MobileNav";
+import ModeToggle from "./ModeToggle";
+import Nav from "./Nav";
+import { buttonVariants } from "./ui/button";
 
 export default function Header() {
   return (

@@ -138,10 +138,10 @@ export default function About() {
         <h3 className="mt-2 text-lg">Vinícius Reis</h3>
         <p className="text-muted-foreground">Desenvolver Front-end</p>
         <div className="mt-4 flex items-center gap-3">
-          {social.map((link, index) => {
+          {social.map((link) => {
             return (
               <Link
-                key={index}
+                key={link.name}
                 href={link.href}
                 className={cn(buttonVariants({ variant: "outline" }))}
               >
@@ -171,9 +171,9 @@ export default function About() {
               <h3 className="text-2xl">{skills.subtitle}</h3>
               <div className="mt-3 flex max-w-[700px] flex-wrap gap-2 md:gap-3">
                 <TooltipProvider>
-                  {skills.skillList.map((skill, index) => {
+                  {skills.skillList.map((skill) => {
                     return (
-                      <Tooltip key={index}>
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span className="rounded-lg border p-4 text-4xl text-muted-foreground transition-all duration-300 hover:border-primary hover:text-primary md:text-3xl">
                             {skill.icon}

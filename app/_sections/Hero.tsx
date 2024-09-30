@@ -1,10 +1,10 @@
+import { siteConfig } from "@/app/_config/site";
 import { cn } from "@/app/_lib/utils";
 import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { BadgeText } from "../_components/BadgeText";
 import { buttonVariants } from "../_components/ui/button";
-import { siteConfig } from "@/app/_config/site";
 
 export default function Hero() {
   return (

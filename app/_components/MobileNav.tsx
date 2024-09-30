@@ -1,10 +1,10 @@
 import { AlignRightIcon } from "lucide-react";
-import { Button, buttonVariants } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { siteConfig } from "../_config/site";
 import { cn } from "../_lib/utils";
+import { Button, buttonVariants } from "./ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const nav = [
   {
@@ -57,10 +57,10 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent side="right">
         <div className="flex flex-col items-center gap-8 py-10">
-          {nav.map((link, index) => {
+          {nav.map((link) => {
             return (
               <Link
-                key={index}
+                key={link.name}
                 href={link.href}
                 className="text-lg font-medium uppercase"
               >
@@ -70,10 +70,10 @@ export default function MobileNav() {
           })}
 
           <div className="flex gap-2">
-            {social.map((link, index) => {
+            {social.map((link) => {
               return (
                 <Link
-                  key={index}
+                  key={link.name}
                   href={link.href}
                   className={buttonVariants({ variant: "ghost" })}
                 >

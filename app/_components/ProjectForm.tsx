@@ -1,7 +1,7 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { type FormEvent, useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";

@@ -45,9 +45,9 @@ export default function Projects() {
         {projects.subtitle}
       </h1>
       <div className="grid grid-cols-1 gap-7 py-5 md:grid-cols-2">
-        {projects.projectList.map((project, index) => {
+        {projects.projectList.map((project) => {
           return (
-            <div key={index} className="flex flex-col gap-4">
+            <div key={project.name} className="flex flex-col gap-4">
               <Image
                 alt={project.name}
                 src={project.imageURL}
