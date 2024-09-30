@@ -35,7 +35,7 @@ export default function Header() {
             target="_blank"
             className={cn(
               buttonVariants({ variant: "ghost", size: "icon" }),
-              "hidden md:inline-flex",
+              "hidden rounded-full md:inline-flex",
             )}
           >
             <span className="sr-only">Github</span>
@@ -46,7 +46,7 @@ export default function Header() {
             target="_blank"
             className={cn(
               buttonVariants({ variant: "ghost", size: "icon" }),
-              "hidden md:inline-flex",
+              "hidden rounded-full md:inline-flex",
             )}
           >
             <span className="sr-only">Instagram</span>
@@ -57,7 +57,7 @@ export default function Header() {
             target="_blank"
             className={cn(
               buttonVariants({ variant: "ghost", size: "icon" }),
-              "hidden md:inline-flex",
+              "hidden rounded-full md:inline-flex",
             )}
           >
             <span className="sr-only">Linkedin</span>

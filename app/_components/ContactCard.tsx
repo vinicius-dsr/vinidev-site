@@ -28,10 +28,10 @@ export default function ContactCard() {
     <div className="mx-auto flex w-full flex-col gap-5 rounded-md border p-5 md:w-fit md:px-16 md:py-10">
       <div className="mx-auto flex flex-col items-center gap-5 py-5 md:py-10">
         <h3 className="text-base font-medium uppercase text-muted-foreground md:text-lg">
-          Bora conversar
+          Gostou do que viu?
         </h3>
         <h1 className="text-center text-3xl font-medium md:mb-0 md:text-5xl">
-          Vamos construir algo incrível juntos?
+          Então vamos construir algo incrível juntos !
         </h1>
         <Link
           href="/contact"
@@ -59,7 +59,10 @@ export default function ContactCard() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={cn(buttonVariants({ variant: "outline" }))}
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "icon" }),
+                  "rounded-full",
+                )}
               >
                 <span className="sr-only">{link.name}</span>
                 {link.icon}

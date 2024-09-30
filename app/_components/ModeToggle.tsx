@@ -22,7 +22,7 @@ export default function ModeToggle() {
           variant="ghost"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           size="icon"
-          className="flex items-center py-5"
+          className="flex items-center rounded-full py-5"
         >
           {theme === "dark" ? <Sun /> : <Moon />}
         </Button>

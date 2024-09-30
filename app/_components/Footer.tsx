@@ -1,5 +1,7 @@
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
+import { cn } from "../_lib/utils";
+import { buttonVariants } from "./ui/button";
 
 export default function Footer() {
   return (
@@ -10,9 +12,13 @@ export default function Footer() {
         </p>
         <Link
           href="#"
-          className="group rounded-md border-2 border-muted-foreground/80 p-2 transition-all duration-300 hover:border-primary"
+          className="group relative flex items-center justify-center overflow-hidden rounded-full border-2 border-muted-foreground/50 p-3 transition-all duration-300 hover:border-primary"
         >
-          <ArrowUp className="text-muted-foreground transition-all duration-300 group-hover:text-primary" />
+          {/* Seta que desaparece subindo */}
+          <ArrowUpIcon className="text-muted-foreground transition-transform duration-300 group-hover:-translate-y-full group-hover:opacity-0" />
+
+          {/* Seta que aparece subindo de baixo */}
+          <ArrowUpIcon className="absolute translate-y-full text-primary opacity-0 transition-transform duration-300 group-hover:translate-y-0 group-hover:opacity-100" />
         </Link>
       </div>
     </footer>

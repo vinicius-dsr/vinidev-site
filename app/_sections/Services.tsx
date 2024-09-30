@@ -56,7 +56,7 @@ export default function Services() {
               collapsible
               className="w-full"
             >
-              <AccordionItem value={service.title} className="">
+              <AccordionItem value={service.title}>
                 <AccordionTrigger className="text-lg font-semibold md:text-xl">
                   {service.title}
                 </AccordionTrigger>
