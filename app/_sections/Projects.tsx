@@ -1,4 +1,8 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "../_components/ui/button";
+import { cn } from "../_lib/utils";
 
 const projects = {
   title: "Meus projetos",
@@ -63,6 +67,21 @@ export default function Projects() {
             </div>
           );
         })}
+      </div>
+      <div className="mt-4 flex flex-col gap-4 md:w-full md:flex-row md:justify-between">
+        <div className="hidden items-center gap-4 md:flex">
+          <h2 className="text-xl font-medium">Ver todos</h2>
+          <ArrowRight className="h-5 w-5" />
+        </div>
+        <Link
+          href=""
+          className={cn(
+            buttonVariants({ variant: "outline", size: "lg" }),
+            "rounded-full py-6 text-base font-medium",
+          )}
+        >
+          Todos os projetos
+        </Link>
       </div>
     </div>
   );
