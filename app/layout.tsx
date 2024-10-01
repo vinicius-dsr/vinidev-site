@@ -4,9 +4,14 @@ import { cn } from "@/app/_lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { JetBrains_Mono, Montserrat } from "next/font/google";
+import { JetBrains_Mono, Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -22,6 +27,7 @@ export const jetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Vinícius Reis - Front-end Developer",
+    // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
     template: `%s | Vinícius Reis`,
   },
   icons: {

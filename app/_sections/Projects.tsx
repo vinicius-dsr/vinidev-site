@@ -9,26 +9,30 @@ const projects = {
   subtitle: "Conheça um pouco do meu trabalho",
   projectList: [
     {
+      name: "Agenda Paragominas",
+      imageURL:
+        "https://utfs.io/f/FRVsZCSgds63GPW7SgrGDo7E5ZMVRCJ0dpvaf26WjOg9cFNL",
+      tag: "Web App",
+      date: "2024",
+    },
+    {
       name: "Blog MDX",
-      imageURL: "/project-blog.png",
+      imageURL:
+        "https://utfs.io/f/FRVsZCSgds63g7pidOKi9fuI6HUAVmogTlD1bcSeQa0dwqp8",
       tag: "Blog",
       date: "2024",
     },
     {
       name: "Reis & Reis - Advocacia",
-      imageURL: "/project-adv.png",
+      imageURL:
+        "https://utfs.io/f/FRVsZCSgds63zo4X147PpFSchIKjQxHXruADbyBiGvaMq17s",
       tag: "Lading Page",
       date: "2024",
     },
     {
       name: "Catálogo Digital",
-      imageURL: "/project-catalogo.png",
-      tag: "E-Commerce",
-      date: "2024",
-    },
-    {
-      name: "Cardápio Digital",
-      imageURL: "/project-cardapio.png",
+      imageURL:
+        "https://utfs.io/f/FRVsZCSgds630YETSLfbQLJ43BfdH2vZtqp81KYeurzXPaOR",
       tag: "E-Commerce",
       date: "2024",
     },
@@ -74,7 +78,7 @@ export default function Projects() {
           <ArrowRight className="h-5 w-5" />
         </div>
         <Link
-          href=""
+          href="/projects"
           className={cn(
             buttonVariants({ variant: "outline", size: "lg" }),
             "rounded-full py-6 text-base font-medium",

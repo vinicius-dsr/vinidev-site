@@ -1,7 +1,5 @@
-import { ArrowUp, ArrowUpIcon } from "lucide-react";
+import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
-import { cn } from "../_lib/utils";
-import { buttonVariants } from "./ui/button";
 
 export default function Footer() {
   return (

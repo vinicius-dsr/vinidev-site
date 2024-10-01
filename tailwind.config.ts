@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)", ...fontFamily.sans],
+        sans: ["var(--font-outfit)", ...fontFamily.sans],
         mono: ["var(--font-jetbrains)", ...fontFamily.mono],
       },
       colors: {
