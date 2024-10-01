@@ -15,9 +15,9 @@ export default function Hero() {
           Freelancer, Designer & Desenvolvedor
         </h2>
         <p className="mx-auto py-3 text-base font-medium text-muted-foreground md:max-w-3xl md:py-5 md:text-lg">
-          Transformo suas ideias em experiências digitais incríveis e
-          intuitivas. Vamos trabalhar juntos para trazer seus projetos à vida e
-          encantar seus usuários!
+          Do conceito inicial à implementação final, dou forma às suas ideias.
+          Que tal trabalharmos juntos para desenvolvermos um projeto que vai se
+          destacar na internet?
         </p>
         <div className="mx-auto mt-5 flex flex-col items-center gap-4 text-center md:flex-row">
           <Link

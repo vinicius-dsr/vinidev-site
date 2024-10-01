@@ -127,7 +127,7 @@ const skills = {
 export default function About() {
   return (
     <div className="mx-auto flex flex-col gap-8 py-0 md:flex-row md:py-10">
-      <div className="flex flex-col items-center gap-2 rounded-md border px-5 py-7 md:w-[40%]">
+      <div className="flex flex-col items-center gap-2 rounded-md border px-5 py-10 md:w-[40%]">
         <Image
           src="/perfil-new.png"
           alt="Vinícius Reis | Desenvolver Front-end"
@@ -135,7 +135,7 @@ export default function About() {
           height={100}
           quality={100}
         />
-        <h3 className="mt-2 text-lg">Vinícius Reis</h3>
+        <h3 className="mt-2 text-lg font-medium">Vinícius Reis</h3>
         <p className="text-muted-foreground">Desenvolver Front-end</p>
         <div className="mt-4 flex items-center gap-3">
           {social.map((link) => {
@@ -143,7 +143,10 @@ export default function About() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={cn(buttonVariants({ variant: "outline" }))}
+                className={cn(
+                  buttonVariants({ variant: "ghost" }),
+                  "rounded-full px-2.5 py-1",
+                )}
               >
                 {link.icon}
               </Link>
@@ -175,7 +178,7 @@ export default function About() {
                     return (
                       <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
-                          <span className="rounded-lg border p-4 text-4xl text-muted-foreground transition-all duration-300 hover:border-primary hover:text-primary md:text-3xl">
+                          <span className="rounded-full border p-4 text-4xl text-muted-foreground transition-all duration-300 hover:border-primary hover:text-primary md:text-3xl">
                             {skill.icon}
                           </span>
                         </TooltipTrigger>

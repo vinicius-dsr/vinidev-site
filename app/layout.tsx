@@ -7,11 +7,6 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",

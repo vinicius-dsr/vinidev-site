@@ -1,6 +1,11 @@
+import { LinkIcon, Plus } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 import Footer from "../_components/Footer";
+import { buttonVariants } from "../_components/ui/button";
 import { projects } from "../_data/db";
+import { cn } from "../_lib/utils";
 
 export default function ProjectPage() {
   return (
@@ -17,14 +22,27 @@ export default function ProjectPage() {
           <div className="grid grid-cols-1 gap-7 py-5 md:grid-cols-2">
             {projects.map((project) => (
               <div key={project.name} className="flex flex-col gap-4">
-                <Image
-                  alt={project.name}
-                  src={project.imageUrl}
-                  width={500}
-                  height={500}
-                  quality={100}
-                  className="mt-5 h-auto w-full bg-contain"
-                />
+                <div className="group relative">
+                  <Image
+                    alt={project.name}
+                    src={project.imageUrl}
+                    width={500}
+                    height={500}
+                    quality={100}
+                    className="mt-5 h-auto w-full bg-contain transition-all duration-500 group-hover:blur-md"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <Link
+                      href={`/projects/${project.slug}`}
+                      className={cn(
+                        buttonVariants({ variant: "ghost" }),
+                        "rounded-full bg-primary px-2 py-8 text-background shadow-md hover:bg-background",
+                      )}
+                    >
+                      <Plus size={52} />
+                    </Link>
+                  </div>
+                </div>
                 <h3 className="text-xl font-medium">{project.name}</h3>
                 <hr />
                 <div className="flex items-center justify-between">
