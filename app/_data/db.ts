@@ -132,7 +132,7 @@ export const projects = [
   {
     name: "Reis & Reis - Advocacia",
     slug: "reis-reis-advocacia",
-    bannerImg: "",
+    bannerImg: "/banner-adv.png",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63zo4X147PpFSchIKjQxHXruADbyBiGvaMq17s",
     tag: "Lading Page",
