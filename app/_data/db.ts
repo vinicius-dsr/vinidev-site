@@ -7,7 +7,7 @@ export const projects = [
       "https://utfs.io/f/FRVsZCSgds63g7pidOKi9fuI6HUAVmogTlD1bcSeQa0dwqp8",
     tag: "Blog",
     date: "2024",
-    smallDescription: "Blog com posts em Markdown",
+    smallDescription: "Blog com postagens em Markdown",
     techs: "Next.JS 14, Velite, Shadcn-ui e TailwindCSS",
     largeDescription:
       "Projeto desenvolvido por mim, no intuito de praticar e testar meus conhecimentos. A ideia é postar como artigos minhas anotações de estudos e projetos, com eu faço minhas anotações no Obsidian, achei pertinente criar uma blog que leia arquivos Markdown, para isso usei o Velite. A aplicação é construída em NextJS na versão 14, UI com Shadcn e estilização com Tailwind.",
