@@ -12,7 +12,7 @@ export default function ProjectPage() {
     <div className="relative h-[80vh] w-full bg-background">
       {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
       <div className="absolute bottom-0 left-0 right-0 top-0 z-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-      <div className="container relative mx-auto max-w-screen-xl py-16">
+      <div className="relative mx-auto mb-8 max-w-screen-xl px-5 py-8 md:px-0 md:py-16">
         <div className="flex flex-col gap-4">
           <h3 className="text-base font-medium uppercase text-muted-foreground md:text-lg">
             Meus projetos
@@ -30,7 +30,7 @@ export default function ProjectPage() {
                     width={500}
                     height={500}
                     quality={100}
-                    className="mt-5 h-auto w-full bg-contain transition-all duration-500 group-hover:blur-md"
+                    className="mt-5 h-auto w-full bg-contain transition-all duration-500 group-hover:scale-90 group-hover:blur-sm"
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <Link

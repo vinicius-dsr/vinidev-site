@@ -67,6 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // biome-ignore lint/a11y/useValidLang: <explanation>
     <html lang="pt-br" className="scroll-smooth">
       <body
         className={cn(

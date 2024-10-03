@@ -15,14 +15,17 @@ export default function Home() {
       </main>
 
       {/* About section */}
-      <section id="about" className="container mx-auto max-w-screen-xl py-20">
+      <section
+        id="about"
+        className="mx-auto max-w-screen-xl px-5 py-20 md:px-0"
+      >
         <About />
       </section>
 
       {/* Service section */}
       <section
         id="services"
-        className="container mx-auto max-w-screen-xl py-20"
+        className="mx-auto max-w-screen-xl px-5 py-20 md:px-0"
       >
         <Services />
       </section>
@@ -30,13 +33,13 @@ export default function Home() {
       {/* Project section */}
       <section
         id="projects"
-        className="container mx-auto max-w-screen-xl py-20"
+        className="mx-auto max-w-screen-xl px-5 py-20 md:px-0"
       >
         <Projects />
       </section>
 
       {/* Contact card */}
-      <section className="container mx-auto max-w-screen-xl py-20">
+      <section className="mx-auto max-w-screen-xl px-5 py-20 md:px-0">
         <ContactCard />
       </section>
 
