@@ -26,7 +26,7 @@ export default function ProjectPage() {
                 <div className="group relative">
                   <Image
                     alt={project.name}
-                    src={project.imageUrl}
+                    src={project.imageUrl || ""}
                     width={500}
                     height={500}
                     quality={100}
