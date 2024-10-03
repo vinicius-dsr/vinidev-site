@@ -16,7 +16,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 export default function ProjectPage() {
-  const { slug } = useParams();
+  const params = useParams();
+  const slug = params?.slug as string;
 
   const project = projects.find((project) => project.slug === slug);
 
