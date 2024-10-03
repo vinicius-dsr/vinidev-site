@@ -26,8 +26,24 @@ export const projects = [
     name: "Agenda Paragominas",
     slug: "agenda-paragominas",
     bannerImg: "/banner-agenda.png",
-    imageUrl:
-      "https://utfs.io/f/FRVsZCSgds63GPW7SgrGDo7E5ZMVRCJ0dpvaf26WjOg9cFNL",
+    images: [
+      {
+        nome: "Homepage",
+        imagem: "/print-homepage.png",
+      },
+      {
+        nome: "Estabelecimentos",
+        imagem: "/print-estabelecimento.png",
+      },
+      {
+        nome: "Pesquisa encontrada",
+        imagem: "/print-pesquisa-encontrada.png",
+      },
+      {
+        nome: "Pesquisa não encontrada",
+        imagem: "/print-pesquisa-nao-encontrada.png",
+      },
+    ],
     tag: "Web Site",
     date: "2024",
     smallDescription: "Todos os estabelecimentos de Paragominas em um só lugar",

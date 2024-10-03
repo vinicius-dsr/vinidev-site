@@ -45,7 +45,7 @@ export default function ProjectPage() {
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
-              <h2 className="mt-2 text-xl font-medium md:mt-4 md:text-2xl">
+              <h2 className="mt-2 text-lg font-medium md:mt-4 md:text-2xl">
                 {project.smallDescription}
               </h2>
             </div>
@@ -57,9 +57,9 @@ export default function ProjectPage() {
             width={500}
             height={500}
             quality={100}
-            className="mt-4 h-auto w-full"
+            className="mt-0 h-auto w-full md:mt-4"
           />
-          <div className="flex flex-col gap-8">
+          <div className="mb-4 flex flex-col gap-8">
             <div className="hidden justify-between md:flex">
               <div>
                 <h3 className="text-lg font-medium uppercase text-muted-foreground">
@@ -100,7 +100,25 @@ export default function ProjectPage() {
             <div>
               <p>{project.largeDescription}</p>
             </div>
-            <div className="flex flex-col gap-4 md:hidden">
+          </div>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-lg font-medium uppercase text-muted-foreground">
+              Imagens do projeto
+            </h2>
+            <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-8">
+              {project.images?.map((image) => (
+                <Image
+                  key={image.nome}
+                  src={image.imagem}
+                  alt={image.nome}
+                  width={500}
+                  height={500}
+                  quality={100}
+                  className="h-auto w-full"
+                />
+              ))}
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-4 md:hidden">
               <div>
                 <h3 className="text-lg font-medium uppercase text-muted-foreground">
                   Tecnologias
