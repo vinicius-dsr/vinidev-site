@@ -26,6 +26,8 @@ export const projects = [
     name: "Agenda Paragominas",
     slug: "agenda-paragominas",
     bannerImg: "/banner-agenda.png",
+    imageUrl:
+      "https://utfs.io/f/FRVsZCSgds63GPW7SgrGDo7E5ZMVRCJ0dpvaf26WjOg9cFNL",
     images: [
       {
         nome: "Homepage",
@@ -142,6 +144,29 @@ export const projects = [
     techs: "Figma",
     largeDescription:
       "Prototipação de uma lading page para o projeto de advocacia de Reis & Reis.",
+    links: [
+      {
+        title: "Site",
+        link: "",
+      },
+      {
+        title: "Github",
+        link: "",
+      },
+    ],
+  },
+  {
+    name: "Sunclean - Energia Solar",
+    slug: "sunclean-energia-solar",
+    bannerImg: "/banner-solar.png",
+    imageUrl:
+      "https://utfs.io/f/FRVsZCSgds63SdvZzzyePxKjV4kv25pclJYUh3LRTsFgtdBA",
+    tag: "Lading Page",
+    date: "2024",
+    smallDescription: "Lading page para empresa de energia solar",
+    techs: "Figma",
+    largeDescription:
+      "Prototipação de uma lading page feita no Figma, para uma empresa de energia solar.",
     links: [
       {
         title: "Site",
