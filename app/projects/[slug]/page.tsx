@@ -2,6 +2,14 @@
 
 import Footer from "@/app/_components/Footer";
 import {
+  Dialog,
+  DialogClose,
+  DialogContainer,
+  DialogContent,
+  DialogImage,
+  DialogTrigger,
+} from "@/app/_components/core/dialog";
+import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -10,7 +18,7 @@ import {
   BreadcrumbSeparator,
 } from "@/app/_components/ui/breadcrumb";
 import { projects } from "@/app/_data/db";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -55,10 +63,10 @@ export default function ProjectPage() {
           <Image
             src={project.bannerImg}
             alt={project.name}
-            width={500}
-            height={500}
+            width={700}
+            height={700}
             quality={100}
-            className="mt-0 h-auto w-full md:mt-4"
+            className="mb-0 mt-0 h-auto w-full md:mb-4 md:mt-4"
           />
           <div className="mb-4 flex flex-col gap-8">
             <div className="hidden justify-between md:flex">
@@ -102,23 +110,55 @@ export default function ProjectPage() {
               <p>{project.largeDescription}</p>
             </div>
           </div>
+
+          {/* Image dos projetos */}
           <div className="flex flex-col gap-4">
             <h2 className="text-lg font-medium uppercase text-muted-foreground">
               Imagens do projeto
             </h2>
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-8">
+
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
               {project.images?.map((image) => (
-                <Image
+                <Dialog
                   key={image.nome}
-                  src={image.imagem}
-                  alt={image.nome}
-                  width={500}
-                  height={500}
-                  quality={100}
-                  className="h-auto w-full"
-                />
+                  transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <DialogTrigger>
+                    <DialogImage
+                      src={image.imagem}
+                      alt={image.nome}
+                      className="h-[200px] w-full rounded-[4px] object-cover md:h-[450px]"
+                    />
+                  </DialogTrigger>
+                  <DialogContainer>
+                    <DialogContent className="relative">
+                      <DialogImage
+                        src={image.imagem}
+                        alt={image.nome}
+                        className="h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]"
+                      />
+                    </DialogContent>
+                    <DialogClose
+                      className="fixed right-6 top-6 h-fit w-fit rounded-full bg-white p-1"
+                      variants={{
+                        initial: { opacity: 0 },
+                        animate: {
+                          opacity: 1,
+                          transition: { delay: 0.3, duration: 0.1 },
+                        },
+                        exit: { opacity: 0, transition: { duration: 0 } },
+                      }}
+                    >
+                      <XIcon className="h-5 w-5 text-zinc-500" />
+                    </DialogClose>
+                  </DialogContainer>
+                </Dialog>
               ))}
             </div>
+
             <div className="mt-4 grid grid-cols-2 gap-4 md:hidden">
               <div>
                 <h3 className="text-lg font-medium uppercase text-muted-foreground">
