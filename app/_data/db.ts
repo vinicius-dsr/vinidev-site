@@ -227,7 +227,7 @@ export const projects = [
     links: [
       {
         title: "Site",
-        link: "",
+        link: "https://www.instagram.com/p/C7P1yYsRGk7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
       {
         title: "Github",
@@ -278,7 +278,7 @@ export const projects = [
     links: [
       {
         title: "Site",
-        link: "",
+        link: "https://www.instagram.com/p/C9N7rYGRpJE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
       {
         title: "Github",
