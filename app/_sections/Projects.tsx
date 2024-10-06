@@ -33,11 +33,11 @@ const projects = {
       date: "2024",
     },
     {
-      name: "Catálogo Digital",
-      slug: "catalogo-digital",
+      name: "Sunclean - Energia Solar",
+      slug: "sunclean-energia-solar",
       imageURL:
-        "https://utfs.io/f/FRVsZCSgds630YETSLfbQLJ43BfdH2vZtqp81KYeurzXPaOR",
-      tag: "E-Commerce",
+        "https://utfs.io/f/FRVsZCSgds63SdvZzzyePxKjV4kv25pclJYUh3LRTsFgtdBA",
+      tag: "Lading Page",
       date: "2024",
     },
   ],

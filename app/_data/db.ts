@@ -2,9 +2,32 @@ export const projects = [
   {
     name: "Blog MDX",
     slug: "blog-mdx",
-    bannerImg: "",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63pNNY0PNMI4G710CxKsTwBkqiZl9LOjMuFQdz",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63g7pidOKi9fuI6HUAVmogTlD1bcSeQa0dwqp8",
+    images: [
+      {
+        nome: "Homepage com temas claro e escuro",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63FrZe62gds63uBw2R9YpgbPN80hWlIoCkevXA",
+      },
+      {
+        nome: "Página de postagens",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63RjWmQKdD8E2FKMUaSsQwYdIoj1lq04ThurBn",
+      },
+      {
+        nome: "Postagem",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63yHuCbxQjPtkbK8d5zZ3AYHTpqw4ycaVOeiLQ",
+      },
+      {
+        nome: "Sobre",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63egJh1HeLdcp9MHVNtT1wzjW4GBUAJnhyXOlv",
+      },
+    ],
     tag: "Blog",
     date: "2024",
     smallDescription: "Blog com postagens em Markdown",
@@ -25,25 +48,30 @@ export const projects = [
   {
     name: "Agenda Paragominas",
     slug: "agenda-paragominas",
-    bannerImg: "/banner-agenda.png",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63SLBXBpyePxKjV4kv25pclJYUh3LRTsFgtdBA",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63GPW7SgrGDo7E5ZMVRCJ0dpvaf26WjOg9cFNL",
     images: [
       {
         nome: "Homepage",
-        imagem: "/print-homepage.png",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds633Ub6wAkYUWeAwRCuq1ltT25NDP0Gr9FpmIbV",
       },
       {
         nome: "Estabelecimentos",
-        imagem: "/print-estabelecimento.png",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63vjGDgF0hBqWjrNK4bFo8YXsMRZlc7zJ06wAt",
       },
       {
         nome: "Pesquisa encontrada",
-        imagem: "/print-pesquisa-encontrada.png",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63DvrIVHiNA2TmXhQz3YqOpcW1le5uawrvfZDi",
       },
       {
         nome: "Pesquisa não encontrada",
-        imagem: "/print-pesquisa-nao-encontrada.png",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63DvmvkviNA2TmXhQz3YqOpcW1le5uawrvfZDi",
       },
     ],
     tag: "Web Site",
@@ -66,8 +94,37 @@ export const projects = [
   {
     name: "Dieta.AI",
     slug: "dieta-ai",
-    bannerImg: "",
-    imageUrl: "",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63wSGEPs0CKnrjqaFm6TNG0kl5Avt4PgZy1wBV",
+    imageUrl:
+      "https://utfs.io/f/FRVsZCSgds63xB92BXaLvRdsJSfNzOngi1ruactw54ZFKy0T",
+    images: [
+      {
+        nome: "Página Inicial",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63L0SEkGF2dR8xB1ZPYpTmeDWjUNJtcXQw7EvF",
+      },
+      {
+        nome: "Primeiro passo, preencher formulário",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63HNrU4E2O6NXgoSdhy3QvqWMtmsPZlneK1zF0",
+      },
+      {
+        nome: "Finalizando dieta, preencher alguns dados",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63FEu1uagds63uBw2R9YpgbPN80hWlIoCkevXA",
+      },
+      {
+        nome: "Gerando dieta",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63c3AIp9GsyY4V0HNLSheXk62B1EPzAfZDMvUd",
+      },
+      {
+        nome: "Dieta gerada",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63yRm2oCQjPtkbK8d5zZ3AYHTpqw4ycaVOeiLQ",
+      },
+    ],
     tag: "App Mobile",
     date: "2024",
     smallDescription: "Gere sua dieta com IA",
@@ -86,34 +143,34 @@ export const projects = [
     ],
   },
   {
-    name: "Catálogo Digital",
-    slug: "catalogo-digital",
-    bannerImg: "",
-    imageUrl:
-      "https://utfs.io/f/FRVsZCSgds630YETSLfbQLJ43BfdH2vZtqp81KYeurzXPaOR",
-    tag: "E-Commerce",
-    date: "2024",
-    smallDescription: "Catálogo de produtos de informática",
-    techs: "Next.js 14, Shadcn-ui, TailwindCSS, Prisma ORM e Neondb",
-    largeDescription:
-      "Simples E-Commerce para venda de produtos de informática com pedidos feitos diretamente pelo Whatsapp.",
-    links: [
-      {
-        title: "Site",
-        link: "",
-      },
-      {
-        title: "Github",
-        link: "https://github.com/vinicius-dsr/catalogo-app",
-      },
-    ],
-  },
-  {
     name: "Cardápio Digital",
     slug: "cardapio-digital",
-    bannerImg: "",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63Oa4rIZWKFScQjzo4AT9U1usy6MHDqEXaJPNR",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63wrJw7SCKnrjqaFm6TNG0kl5Avt4PgZy1wBVu",
+    images: [
+      {
+        nome: "Homepage Desktop",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63JmdKeLAvkrsDXTy1q6uCf53cpwbinVRzeLEY",
+      },
+      {
+        nome: "Homepage Mobile",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63gvgqQwKi9fuI6HUAVmogTlD1bcSeQa0dwqp8",
+      },
+      {
+        nome: "Modal do carrinho de compras",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63dOOVCFHB8KESvq7wFzhRT93MxIL1XpZrQtnu",
+      },
+      {
+        nome: "Footer mobile com botão de ir para o carrinho",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds634VmFoyJDCySAIGBNQekR6piu49Pr0DZ3hE1F",
+      },
+    ],
     tag: "E-Commerce",
     date: "2024",
     smallDescription: "Cardápio digital para restaurante",
@@ -134,9 +191,32 @@ export const projects = [
   {
     name: "Reis & Reis - Advocacia",
     slug: "reis-reis-advocacia",
-    bannerImg: "/banner-adv.png",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63DrvqRuiNA2TmXhQz3YqOpcW1le5uawrvfZDi",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63zo4X147PpFSchIKjQxHXruADbyBiGvaMq17s",
+    images: [
+      {
+        nome: "Homepage",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63FRJD6pFgds63uBw2R9YpgbPN80hWlIoCkevX",
+      },
+      {
+        nome: "Serviços",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63BK5V9hTZMhigP7H4pwd2WSYyr1NlItoLGREF",
+      },
+      {
+        nome: "Sobre Nós",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63dicI97HB8KESvq7wFzhRT93MxIL1XpZrQtnu",
+      },
+      {
+        nome: "Página completa",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63Hl0FaG2O6NXgoSdhy3QvqWMtmsPZlneK1zF0",
+      },
+    ],
     tag: "Lading Page",
     date: "2024",
     smallDescription:
@@ -158,9 +238,37 @@ export const projects = [
   {
     name: "Sunclean - Energia Solar",
     slug: "sunclean-energia-solar",
-    bannerImg: "/banner-solar.png",
+    bannerImg:
+      "https://utfs.io/f/FRVsZCSgds63daMormHB8KESvq7wFzhRT93MxIL1XpZrQtnu",
     imageUrl:
       "https://utfs.io/f/FRVsZCSgds63SdvZzzyePxKjV4kv25pclJYUh3LRTsFgtdBA",
+    images: [
+      {
+        nome: "Homepage",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63VyPYyBJc5ADCzMkxRFn1HbOq9aPL7ts3fTY6",
+      },
+      {
+        nome: "Sobre",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63OiKhlGWKFScQjzo4AT9U1usy6MHDqEXaJPNR",
+      },
+      {
+        nome: "Serviços",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63DJBmfJ1iNA2TmXhQz3YqOpcW1le5uawrvfZD",
+      },
+      {
+        nome: "Área de contato e Rodapé",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds63OcblQ7WKFScQjzo4AT9U1usy6MHDqEXaJPNR",
+      },
+      {
+        nome: "Página completa",
+        imagem:
+          "https://utfs.io/f/FRVsZCSgds639QZI8W6SbSZl6XLhcpDa7Yke213gnzMBCrHN",
+      },
+    ],
     tag: "Lading Page",
     date: "2024",
     smallDescription: "Lading page para empresa de energia solar",

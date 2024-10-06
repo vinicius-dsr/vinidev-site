@@ -66,7 +66,7 @@ export default function ProjectPage() {
             width={700}
             height={700}
             quality={100}
-            className="mb-0 mt-0 h-auto w-full md:mb-4 md:mt-4"
+            className="mb-0 mt-0 h-auto w-full object-cover md:mb-4 md:mt-4"
           />
           <div className="mb-4 flex flex-col gap-8">
             <div className="hidden justify-between md:flex">
@@ -130,7 +130,7 @@ export default function ProjectPage() {
                     <DialogImage
                       src={image.imagem}
                       alt={image.nome}
-                      className="h-[200px] w-full rounded-[4px] object-cover md:h-[450px]"
+                      className="h-[200px] w-full object-cover md:h-[450px]"
                     />
                   </DialogTrigger>
                   <DialogContainer>
@@ -138,7 +138,7 @@ export default function ProjectPage() {
                       <DialogImage
                         src={image.imagem}
                         alt={image.nome}
-                        className="h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]"
+                        className="h-auto w-full max-w-[90vw] object-cover lg:h-[90vh]"
                       />
                     </DialogContent>
                     <DialogClose
